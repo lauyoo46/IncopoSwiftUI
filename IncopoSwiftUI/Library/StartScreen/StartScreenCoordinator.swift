@@ -30,6 +30,11 @@ class StartScreenCoordinator: BaseCoordinator {
 
 extension StartScreenCoordinator {
     private func configureActions(for viewModel: StartScreenViewModel) {
-        
+        viewModel
+            .submitLogin
+            .sink {
+                
+            }
+            .store(in: &subscriptions)
     }
 }

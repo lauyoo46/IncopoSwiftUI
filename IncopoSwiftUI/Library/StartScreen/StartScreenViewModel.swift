@@ -6,7 +6,16 @@
 //
 
 import Foundation
+import Combine
 
 class StartScreenViewModel: ObservableObject {
     
+    @Published var username: String = ""
+    @Published var password: String = ""
+    
+    var submitLogin = PassthroughSubject<Void, Never>()
+    
+    func login() {
+        submitLogin.send()
+    }
 }
