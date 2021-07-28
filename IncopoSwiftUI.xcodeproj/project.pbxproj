@@ -56,8 +56,7 @@
 		1989FA6D26B1397400FA9893 /* IncopoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1989FA6E26B1397400FA9893 /* AppDelegate.swift */,
-				1989FA7026B1397400FA9893 /* SceneDelegate.swift */,
+				1989FA8226B1399D00FA9893 /* App */,
 				1989FA7226B1397400FA9893 /* ContentView.swift */,
 				1989FA7426B1397900FA9893 /* Assets.xcassets */,
 				1989FA7926B1397900FA9893 /* LaunchScreen.storyboard */,
@@ -73,6 +72,15 @@
 				1989FA7726B1397900FA9893 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1989FA8226B1399D00FA9893 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1989FA6E26B1397400FA9893 /* AppDelegate.swift */,
+				1989FA7026B1397400FA9893 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
