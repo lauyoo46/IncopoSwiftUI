@@ -33,8 +33,17 @@ extension StartScreenCoordinator {
         viewModel
             .submitLogin
             .sink {
-                
+                self.presentDashboard()
             }
             .store(in: &subscriptions)
+    }
+    
+    func presentDashboard() {
+        let tabBarCoordinator = TabBarCoordinator()
+        store(coordinator: tabBarCoordinator)
+        tabBarCoordinator.start()
+        tabBarCoordinator.isCompleted = { [weak self] in
+            self?.free(coordinator: tabBarCoordinator)
+        }
     }
 }

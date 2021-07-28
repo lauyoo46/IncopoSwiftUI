@@ -35,7 +35,7 @@ struct StartScreenView: View {
                     .cornerRadius(10)
                     .padding(.bottom, 10)
                 
-                TextField("Password", text: $viewModel.username)
+                SecureField("Password", text: $viewModel.password)
                     .padding(.horizontal, 10)
                     .frame(height: 40)
                     .background(Color("whiteColor").opacity(0.7))

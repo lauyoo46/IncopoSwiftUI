@@ -21,6 +21,24 @@
 		1989FA9226B1551D00FA9893 /* StartScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA9126B1551D00FA9893 /* StartScreenCoordinator.swift */; };
 		1989FA9426B1552800FA9893 /* StartScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA9326B1552800FA9893 /* StartScreenViewModel.swift */; };
 		1989FA9826B1567C00FA9893 /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA9726B1567C00FA9893 /* StartScreenView.swift */; };
+		1989FA9B26B1855500FA9893 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA9A26B1855500FA9893 /* TabBarCoordinator.swift */; };
+		1989FA9D26B1855E00FA9893 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA9C26B1855E00FA9893 /* TabBarViewModel.swift */; };
+		1989FA9F26B1856800FA9893 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA9E26B1856800FA9893 /* TabBarView.swift */; };
+		1989FAA226B18B2300FA9893 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAA126B18B2300FA9893 /* HomeCoordinator.swift */; };
+		1989FAA426B18B3300FA9893 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAA326B18B3300FA9893 /* HomeViewModel.swift */; };
+		1989FAA626B18B3E00FA9893 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAA526B18B3E00FA9893 /* HomeView.swift */; };
+		1989FAA926B19C8900FA9893 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAA826B19C8900FA9893 /* SearchCoordinator.swift */; };
+		1989FAAB26B19C9600FA9893 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAAA26B19C9600FA9893 /* SearchViewModel.swift */; };
+		1989FAAD26B19CA000FA9893 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAAC26B19CA000FA9893 /* SearchView.swift */; };
+		1989FAB226B19D5D00FA9893 /* AddPostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAB126B19D5D00FA9893 /* AddPostCoordinator.swift */; };
+		1989FAB426B19D6600FA9893 /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAB326B19D6600FA9893 /* AddPostViewModel.swift */; };
+		1989FAB626B19D7800FA9893 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAB526B19D7800FA9893 /* AddPostView.swift */; };
+		1989FAB826B19D9E00FA9893 /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAB726B19D9E00FA9893 /* FavoritesCoordinator.swift */; };
+		1989FABA26B19DAA00FA9893 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAB926B19DAA00FA9893 /* FavoritesViewModel.swift */; };
+		1989FABC26B19DB200FA9893 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FABB26B19DB200FA9893 /* FavoritesView.swift */; };
+		1989FABE26B19DC400FA9893 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FABD26B19DC400FA9893 /* ProfileCoordinator.swift */; };
+		1989FAC026B19DCD00FA9893 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FABF26B19DCD00FA9893 /* ProfileViewModel.swift */; };
+		1989FAC226B19DD600FA9893 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC126B19DD600FA9893 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +58,24 @@
 		1989FA9126B1551D00FA9893 /* StartScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenCoordinator.swift; sourceTree = "<group>"; };
 		1989FA9326B1552800FA9893 /* StartScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewModel.swift; sourceTree = "<group>"; };
 		1989FA9726B1567C00FA9893 /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
+		1989FA9A26B1855500FA9893 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		1989FA9C26B1855E00FA9893 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		1989FA9E26B1856800FA9893 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1989FAA126B18B2300FA9893 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		1989FAA326B18B3300FA9893 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1989FAA526B18B3E00FA9893 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1989FAA826B19C8900FA9893 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		1989FAAA26B19C9600FA9893 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		1989FAAC26B19CA000FA9893 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1989FAB126B19D5D00FA9893 /* AddPostCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostCoordinator.swift; sourceTree = "<group>"; };
+		1989FAB326B19D6600FA9893 /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
+		1989FAB526B19D7800FA9893 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		1989FAB726B19D9E00FA9893 /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		1989FAB926B19DAA00FA9893 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		1989FABB26B19DB200FA9893 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		1989FABD26B19DC400FA9893 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		1989FABF26B19DCD00FA9893 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1989FAC126B19DD600FA9893 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +110,8 @@
 			children = (
 				1989FA8226B1399D00FA9893 /* App */,
 				1989FA8526B14DC000FA9893 /* Library */,
+				1989FA9026B154F000FA9893 /* StartScreen */,
+				1989FA9926B184FE00FA9893 /* Dashboard */,
 				1989FA7226B1397400FA9893 /* ContentView.swift */,
 				1989FA7426B1397900FA9893 /* Assets.xcassets */,
 				1989FA7926B1397900FA9893 /* LaunchScreen.storyboard */,
@@ -106,7 +144,6 @@
 			children = (
 				1989FA8B26B1540A00FA9893 /* Router */,
 				1989FA8A26B153C900FA9893 /* Coordinator */,
-				1989FA9026B154F000FA9893 /* StartScreen */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -137,6 +174,71 @@
 				1989FA9726B1567C00FA9893 /* StartScreenView.swift */,
 			);
 			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		1989FA9926B184FE00FA9893 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1989FAA026B1857700FA9893 /* Home Screen */,
+				1989FAA726B19C7400FA9893 /* Search Screen */,
+				1989FAAE26B19CB300FA9893 /* Add Screen */,
+				1989FAAF26B19CE300FA9893 /* Favorites Screen */,
+				1989FAB026B19D1200FA9893 /* Profile Screen */,
+				1989FA9A26B1855500FA9893 /* TabBarCoordinator.swift */,
+				1989FA9C26B1855E00FA9893 /* TabBarViewModel.swift */,
+				1989FA9E26B1856800FA9893 /* TabBarView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		1989FAA026B1857700FA9893 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1989FAA126B18B2300FA9893 /* HomeCoordinator.swift */,
+				1989FAA326B18B3300FA9893 /* HomeViewModel.swift */,
+				1989FAA526B18B3E00FA9893 /* HomeView.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		1989FAA726B19C7400FA9893 /* Search Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1989FAA826B19C8900FA9893 /* SearchCoordinator.swift */,
+				1989FAAA26B19C9600FA9893 /* SearchViewModel.swift */,
+				1989FAAC26B19CA000FA9893 /* SearchView.swift */,
+			);
+			path = "Search Screen";
+			sourceTree = "<group>";
+		};
+		1989FAAE26B19CB300FA9893 /* Add Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1989FAB126B19D5D00FA9893 /* AddPostCoordinator.swift */,
+				1989FAB326B19D6600FA9893 /* AddPostViewModel.swift */,
+				1989FAB526B19D7800FA9893 /* AddPostView.swift */,
+			);
+			path = "Add Screen";
+			sourceTree = "<group>";
+		};
+		1989FAAF26B19CE300FA9893 /* Favorites Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1989FAB726B19D9E00FA9893 /* FavoritesCoordinator.swift */,
+				1989FAB926B19DAA00FA9893 /* FavoritesViewModel.swift */,
+				1989FABB26B19DB200FA9893 /* FavoritesView.swift */,
+			);
+			path = "Favorites Screen";
+			sourceTree = "<group>";
+		};
+		1989FAB026B19D1200FA9893 /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1989FABD26B19DC400FA9893 /* ProfileCoordinator.swift */,
+				1989FABF26B19DCD00FA9893 /* ProfileViewModel.swift */,
+				1989FAC126B19DD600FA9893 /* ProfileView.swift */,
+			);
+			path = "Profile Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,17 +311,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1989FAB426B19D6600FA9893 /* AddPostViewModel.swift in Sources */,
+				1989FAAD26B19CA000FA9893 /* SearchView.swift in Sources */,
+				1989FABC26B19DB200FA9893 /* FavoritesView.swift in Sources */,
+				1989FA9D26B1855E00FA9893 /* TabBarViewModel.swift in Sources */,
 				1989FA8F26B1542C00FA9893 /* Router.swift in Sources */,
+				1989FAB826B19D9E00FA9893 /* FavoritesCoordinator.swift in Sources */,
+				1989FAC026B19DCD00FA9893 /* ProfileViewModel.swift in Sources */,
+				1989FABA26B19DAA00FA9893 /* FavoritesViewModel.swift in Sources */,
+				1989FAA226B18B2300FA9893 /* HomeCoordinator.swift in Sources */,
+				1989FAA426B18B3300FA9893 /* HomeViewModel.swift in Sources */,
+				1989FAAB26B19C9600FA9893 /* SearchViewModel.swift in Sources */,
+				1989FAC226B19DD600FA9893 /* ProfileView.swift in Sources */,
+				1989FAA926B19C8900FA9893 /* SearchCoordinator.swift in Sources */,
+				1989FA9F26B1856800FA9893 /* TabBarView.swift in Sources */,
+				1989FAA626B18B3E00FA9893 /* HomeView.swift in Sources */,
 				1989FA9226B1551D00FA9893 /* StartScreenCoordinator.swift in Sources */,
+				1989FA9B26B1855500FA9893 /* TabBarCoordinator.swift in Sources */,
 				1989FA8426B14D8800FA9893 /* AppCoordinator.swift in Sources */,
+				1989FABE26B19DC400FA9893 /* ProfileCoordinator.swift in Sources */,
 				1989FA9426B1552800FA9893 /* StartScreenViewModel.swift in Sources */,
 				1989FA8926B14E1B00FA9893 /* BaseCoordinator.swift in Sources */,
 				1989FA6F26B1397400FA9893 /* AppDelegate.swift in Sources */,
+				1989FAB626B19D7800FA9893 /* AddPostView.swift in Sources */,
 				1989FA8D26B1541400FA9893 /* Drawable.swift in Sources */,
 				1989FA8726B14DF000FA9893 /* Coordinator.swift in Sources */,
 				1989FA7126B1397400FA9893 /* SceneDelegate.swift in Sources */,
 				1989FA9826B1567C00FA9893 /* StartScreenView.swift in Sources */,
 				1989FA7326B1397400FA9893 /* ContentView.swift in Sources */,
+				1989FAB226B19D5D00FA9893 /* AddPostCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
