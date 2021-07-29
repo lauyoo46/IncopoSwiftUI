@@ -11,92 +11,93 @@ struct StartScreenView: View {
     @EnvironmentObject var viewModel: StartScreenViewModel
     
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color("normalBlueColor"), Color("darkBlueColor")]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
+        VStack {
+            Image("writerHand")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.bottom, 60)
             
-            VStack {
-                Text("Incopo")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .padding(.vertical, 20)
-                
-                Image("humanWriter")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 100)
-                    .padding(.bottom, 100)
+            Text("Incopo")
+                .font(.title)
+                .fontWeight(.semibold)
+                .padding(.bottom, 10)
+            
+            Text("Where people post their poems")
+                .font(.body)
+                .fontWeight(.medium)
+                .padding(.bottom, 70)
+                .opacity(0.6)
+            
+            VStack(alignment: .leading) {
                 
                 TextField("Username", text: $viewModel.username)
-                    .padding(.horizontal, 10)
-                    .frame(height: 40)
-                    .background(Color("whiteColor").opacity(0.7))
-                    .autocapitalization(.none)
-                    .cornerRadius(10)
+                    .frame(height: 30)
+                    .cornerRadius(22)
                     .padding(.bottom, 10)
                 
+                Divider()
+                    .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 2)
+                    .background(Color.black)
+                    .opacity(0.5)
+                
                 SecureField("Password", text: $viewModel.password)
-                    .padding(.horizontal, 10)
-                    .frame(height: 40)
-                    .background(Color("whiteColor").opacity(0.7))
-                    .autocapitalization(.none)
-                    .cornerRadius(10)
-                    .padding(.bottom, 30)
+                    .frame(height: 30)
+                    .cornerRadius(22)
+                    .padding(.bottom, 40)
                 
-                Button(action: {
-                    viewModel.login()
-                }, label: {
-                    Text("Login")
-                        .frame(minWidth: 0,
-                               maxWidth: .infinity,
-                               minHeight: 0,
-                               maxHeight: 50)
+                HStack {
+                    Button(action: {
                         
-                        .font(.system(size: 15))
-                        .clipShape(Capsule())
-                        .background(Color("navyBlueColor"))
-                        .foregroundColor(Color("whiteColor"))
-                        .cornerRadius(22)
-                })
+                    }, label: {
+                        Text("Forgot password?")
+                            .font(.system(size: 15))
+                            .fontWeight(.regular)
+                            .foregroundColor(.black)
+                            .opacity(0.3)
+                    })
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "arrow.right.circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(.black)
+                            .aspectRatio(contentMode: .fit)
+                    })
+                    
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Register")
+                            .font(.body)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                    })
+                }
+                .padding(.bottom, 30)
                 
-                HStack(spacing: 5) {
-                    Divider()
-                        .frame(minWidth: 0,
-                               maxWidth: .infinity,
-                               maxHeight: 1)
-                        .background(Color("whiteColor"))
+                HStack {
+                    Spacer()
                     
                     Text("or")
-                        .foregroundColor(Color("whiteColor"))
-                        .font(.system(size: 15))
+                        .opacity(0.3)
                     
-                    Divider()
-                        .frame(minWidth: 0,
-                               maxWidth: .infinity,
-                               maxHeight: 1)
-                        .background(Color("whiteColor"))
+                    Spacer()
                 }
-                
-                Button(action: {
-                    
-                }, label: {
-                    Text("Register")
-                        .frame(minWidth: 0,
-                               maxWidth: .infinity,
-                               minHeight: 0,
-                               maxHeight: 50)
-                        
-                        .font(.system(size: 15))
-                        .clipShape(Capsule())
-                        .background(Color("navyBlueColor"))
-                        .foregroundColor(Color("whiteColor"))
-                        .cornerRadius(22)
-                })
-                
-                Spacer()
             }
-            .padding(.horizontal, 60)
-            .frame(width: UIScreen.main.bounds.width)
+            .padding(.horizontal, 30)
+            
+            Spacer()
+            
+            Text("Login with Google")
+                .fontWeight(.semibold)
+                .padding(.bottom, 20)
         }
     }
 }
