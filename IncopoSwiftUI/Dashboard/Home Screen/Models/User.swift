@@ -9,7 +9,7 @@ import UIKit
 
 class User: Identifiable {
     
-    var id = UUID()
+    var id: String
     var emailAddress: String
     var password: String
     
@@ -18,14 +18,15 @@ class User: Identifiable {
     var dateOfBirth: String
     var avatar: UIImage
     
-    init(emailAddress: String, password: String,
+    init(id: String, emailAddress: String, password: String,
          firstName: String, lastName: String,
          dateOfBirth: String) {
+        self.id = id
         self.emailAddress = emailAddress
         self.password = password
         self.firstName = firstName
         self.lastName = lastName
         self.dateOfBirth = dateOfBirth
-        self.avatar = UIImage(named: "placeholderImage") ?? UIImage()
+        self.avatar = UIImage(named: "MirceaCartarescu") ?? UIImage()
     }
 }

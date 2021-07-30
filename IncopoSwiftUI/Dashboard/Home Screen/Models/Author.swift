@@ -8,15 +8,17 @@
 import Foundation
 
 class Author: User {
-    let authorID = UUID()
+    let authorID: String
     let user: User
     
-    let posts: [Post]
+    let postIDs: [String]
     
-    init(user: User, posts: [Post]) {
+    init(authorID: String, user: User, postIDs: [String]) {
+        self.authorID = authorID
         self.user = user
-        self.posts = posts
-        super.init(emailAddress: user.emailAddress,
+        self.postIDs = postIDs
+        super.init(id: authorID,
+                   emailAddress: user.emailAddress,
                    password: user.password,
                    firstName: user.firstName,
                    lastName: user.lastName,

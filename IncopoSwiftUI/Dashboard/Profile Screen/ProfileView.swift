@@ -9,14 +9,9 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color("normalBlueColor"), Color("darkBlueColor")]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing)
-                .ignoresSafeArea()
             
             Text("Hello Profile!")
-        }
+        
     }
 }
 

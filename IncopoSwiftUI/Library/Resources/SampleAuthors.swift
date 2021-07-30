@@ -9,18 +9,19 @@ import Foundation
 
 class SampleAuthors {
     
-    static func getSampleAuthors() -> [Author] {
+    let sampleUsers = SampleUsers()
+    
+    func getAuthors() -> [Author] {
         var authors = [Author]()
         
-        let users = SampleUsers.getSampleUsers()
-        let posts = SamplePosts.getSamplePosts()
+        let users = sampleUsers.getUsers()
         
-        let author1 = Author(user: users[0], posts: [posts[0], posts[1], posts[2]])
-        let author2 = Author(user: users[1], posts: [])
-        let author3 = Author(user: users[2], posts: [posts[3], posts[4]])
-        let author4 = Author(user: users[3], posts: [posts[5]])
-        let author5 = Author(user: users[4], posts: [])
-        let author6 = Author(user: users[5], posts: [posts[6], posts[7]])
+        let author1 = Author(authorID: "1", user: users[0], postIDs: ["1", "2", "3"])
+        let author2 = Author(authorID: "2", user: users[1], postIDs: [])
+        let author3 = Author(authorID: "3", user: users[2], postIDs: ["4", "5"])
+        let author4 = Author(authorID: "4", user: users[3], postIDs: ["6"])
+        let author5 = Author(authorID: "5", user: users[4], postIDs: [])
+        let author6 = Author(authorID: "6", user: users[5], postIDs: ["7", "8"])
         
         authors.append(author1)
         authors.append(author2)

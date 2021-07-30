@@ -59,7 +59,7 @@ struct StartScreenView: View {
                     Spacer()
                     
                     Button(action: {
-                        
+                        viewModel.login()
                     }, label: {
                         Image(systemName: "arrow.right.circle.fill")
                             .font(.system(size: 30))

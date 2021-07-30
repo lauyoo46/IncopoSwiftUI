@@ -24,14 +24,14 @@ enum Genre: String {
 
 class Post: Identifiable {
     
-    var id = UUID()
+    var id: String
     var title: String
     var content: String
     var date: String
     var location: String
     var genre: Genre
     
-    var authorID: UUID
+    var authorID: String
     var authorName: String
     
     var noLikes: Int
@@ -39,9 +39,10 @@ class Post: Identifiable {
     var comments: [String]
     var picture: UIImage
     
-    init(title: String, content: String, date: String,
-         location: String, genre: Genre, authorID: UUID, authorName: String,
+    init(id: String, title: String, content: String, date: String,
+         location: String, genre: Genre, authorID: String, authorName: String,
          noLikes: Int, noComments: Int, comments: [String], picture: UIImage) {
+        self.id = id
         self.title = title
         self.content = content
         self.date = date

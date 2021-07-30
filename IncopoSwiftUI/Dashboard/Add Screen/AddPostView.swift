@@ -9,14 +9,7 @@ import SwiftUI
 
 struct AddPostView: View {
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color("normalBlueColor"), Color("darkBlueColor")]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-            Text("Hello Add Post!")
-        }
+        Text("Hello Add Post!")
     }
 }
 

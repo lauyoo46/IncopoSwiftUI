@@ -10,6 +10,8 @@
 		19149EE926B2AA95001DF399 /* SamplePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19149EE826B2AA95001DF399 /* SamplePosts.swift */; };
 		19149EEB26B2AAA9001DF399 /* SampleUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19149EEA26B2AAA9001DF399 /* SampleUsers.swift */; };
 		19149EED26B2AAB4001DF399 /* SampleAuthors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19149EEC26B2AAB4001DF399 /* SampleAuthors.swift */; };
+		194FD4EF26B3F47A006315B5 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FD4EE26B3F47A006315B5 /* PostView.swift */; };
+		194FD4F226B41E47006315B5 /* IncopoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FD4F126B41E47006315B5 /* IncopoTextView.swift */; };
 		1989FA6F26B1397400FA9893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA6E26B1397400FA9893 /* AppDelegate.swift */; };
 		1989FA7126B1397400FA9893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA7026B1397400FA9893 /* SceneDelegate.swift */; };
 		1989FA7326B1397400FA9893 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FA7226B1397400FA9893 /* ContentView.swift */; };
@@ -51,6 +53,8 @@
 		19149EE826B2AA95001DF399 /* SamplePosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePosts.swift; sourceTree = "<group>"; };
 		19149EEA26B2AAA9001DF399 /* SampleUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUsers.swift; sourceTree = "<group>"; };
 		19149EEC26B2AAB4001DF399 /* SampleAuthors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAuthors.swift; sourceTree = "<group>"; };
+		194FD4EE26B3F47A006315B5 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		194FD4F126B41E47006315B5 /* IncopoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncopoTextView.swift; sourceTree = "<group>"; };
 		1989FA6B26B1397400FA9893 /* IncopoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncopoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1989FA6E26B1397400FA9893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1989FA7026B1397400FA9893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		194FD4F026B4022D006315B5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				194FD4F126B41E47006315B5 /* IncopoTextView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1989FA6226B1397400FA9893 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 		1989FA8526B14DC000FA9893 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				194FD4F026B4022D006315B5 /* Components */,
 				19149EE726B2AA83001DF399 /* Resources */,
 				1989FA8B26B1540A00FA9893 /* Router */,
 				1989FA8A26B153C900FA9893 /* Coordinator */,
@@ -269,6 +282,7 @@
 		1989FAC326B1B0BC00FA9893 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				194FD4EE26B3F47A006315B5 /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,8 +399,10 @@
 				1989FA7126B1397400FA9893 /* SceneDelegate.swift in Sources */,
 				1989FA9826B1567C00FA9893 /* StartScreenView.swift in Sources */,
 				1989FA7326B1397400FA9893 /* ContentView.swift in Sources */,
+				194FD4F226B41E47006315B5 /* IncopoTextView.swift in Sources */,
 				1989FAB226B19D5D00FA9893 /* AddPostCoordinator.swift in Sources */,
 				1989FACA26B1B43100FA9893 /* User.swift in Sources */,
+				194FD4EF26B3F47A006315B5 /* PostView.swift in Sources */,
 				1989FAC826B1B41400FA9893 /* Author.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
