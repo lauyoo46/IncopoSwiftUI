@@ -12,77 +12,92 @@ struct PostView: View {
     let author: Author
     let post: Post
     @State var isSeeMorePressed: Bool = false
+    @State private var desiredHeight: CGFloat = 0
     
     var body: some View {
         
-            VStack {
-                VStack(alignment: .center) {
-                    Image(uiImage: author.avatar)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 80)
-                        .clipShape(Circle())
-                    
-                    Text("\(author.firstName) \(author.lastName)")
-                        .font(.system(size: 18))
-                        .fontWeight(.medium)
-                        .padding(.bottom, 15)
-                    
+        VStack {
+            VStack(alignment: .center) {
+                Image(uiImage: author.avatar)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 80)
+                    .clipShape(Circle())
+                
+                Text("\(author.firstName) \(author.lastName)")
+                    .font(.system(size: 18))
+                    .fontWeight(.medium)
+                    .padding(.bottom, 15)
+            }
+            
+            VStack(alignment: .leading) {
+                
+                Text(post.title)
+                    .font(.title2)
+                    .fontWeight(.medium)
+                    .padding(.leading, 4)
+                
+                IncopoReadOnlyTextView(text: post.content, desiredHeight: $desiredHeight)
+                    .conditionalModifier(!isSeeMorePressed, transform: {
+                        $0.frame(height: 155)
+                    })
+                    .conditionalModifier(isSeeMorePressed, transform: {
+                        $0.frame(height: max(desiredHeight, 155))
+                    })
+                
+                Button(action: {
+                    isSeeMorePressed.toggle()
+                }, label: {
+                    Text(isSeeMorePressed ? "See less..." : "See more...")
+                        .font(.system(size: 15))
+                        .foregroundColor(.black)
+                        .opacity(0.4)
+                })
+                .padding(.leading, 5)
+            }
+            .padding(.bottom, 20)
+            
+            HStack(spacing: 10) {
+                Image(systemName: "hand.thumbsup")
+                    .font(.system(size: 18))
+                
+                Text("\(post.noLikes) likes")
+                    .font(.system(size: 18))
+                    .padding(.trailing, 20)
+                
+                Image(systemName: "text.bubble")
+                    .font(.system(size: 18))
+                
+                Text("\(post.noComments) comments")
+                    .font(.system(size: 18))
+                
+                Spacer()
+            }
+            
+            TextField("Add a comment...", text: $viewModel.commentText)
+                .padding(.leading, 60)
+                .frame(height: 50)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 22)
+                        .stroke(Color.black.opacity(0.3), lineWidth: 1)
+                )
+                .overlay(
                     HStack {
-                        Text(post.title)
-                            .font(.title2)
-                            .fontWeight(.medium)
-                            .padding(.leading, 3)
+                        Image("MirceaCartarescu")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 40)
+                            
+                            .clipShape(Circle())
                         
                         Spacer()
-                    }
-                    
-                    IncopoReadOnlyTextView(text: post.content)
-                        .frame(height: 205)
-                }
-                .padding(.bottom, 20)
-                
-                HStack(spacing: 10) {
-                    Image(systemName: "hand.thumbsup")
-                        .font(.system(size: 18))
-                    
-                    Text("\(post.noLikes) likes")
-                        .font(.system(size: 18))
-                        .padding(.trailing, 20)
-                    
-                    Image(systemName: "text.bubble")
-                        .font(.system(size: 18))
-                    
-                    Text("\(post.noComments) comments")
-                        .font(.system(size: 18))
-                    
-                    Spacer()
-                }
-                
-                TextField("Add a comment...", text: $viewModel.commentText)
-                    .padding(.leading, 60)
-                    .frame(height: 50)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 22)
-                            .stroke(Color.black.opacity(0.3), lineWidth: 1)
-                    )
-                    .overlay(
-                        HStack {
-                            Image("MirceaCartarescu")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 40)
-                                
-                                .clipShape(Circle())
-                                
-                            Spacer()
-                        }.padding(.leading, 15)
-                    )
-                    
-                    
-                    
-            }
-            .padding(.horizontal, 20)
+                    }.padding(.leading, 15)
+                )
+            
+            
+            
+        }
+        .padding(.horizontal, 20)
     }
 }
 

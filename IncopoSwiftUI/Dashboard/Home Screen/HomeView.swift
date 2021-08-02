@@ -29,9 +29,11 @@ struct HomeView: View {
             .padding(.horizontal, 30)
             
            
-            ScrollView {
+            ScrollView(.vertical) {
                 PostView(author: authors[0], post: posts[0])
             }
+            
+            Spacer()
         }
         
     }

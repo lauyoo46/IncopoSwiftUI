@@ -47,6 +47,7 @@
 		1989FAC626B1B0E600FA9893 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC526B1B0E600FA9893 /* Post.swift */; };
 		1989FAC826B1B41400FA9893 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC726B1B41400FA9893 /* Author.swift */; };
 		1989FACA26B1B43100FA9893 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC926B1B43100FA9893 /* User.swift */; };
+		19EE635E26B7DAE70005BA7B /* ConditionalModifier+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		1989FAC526B1B0E600FA9893 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1989FAC726B1B41400FA9893 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		1989FAC926B1B43100FA9893 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConditionalModifier+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		1989FA8526B14DC000FA9893 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				19EE635C26B7DAC80005BA7B /* Extensions */,
 				194FD4F026B4022D006315B5 /* Components */,
 				19149EE726B2AA83001DF399 /* Resources */,
 				1989FA8B26B1540A00FA9893 /* Router */,
@@ -297,6 +300,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		19EE635C26B7DAC80005BA7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +409,7 @@
 				1989FA8726B14DF000FA9893 /* Coordinator.swift in Sources */,
 				1989FA7126B1397400FA9893 /* SceneDelegate.swift in Sources */,
 				1989FA9826B1567C00FA9893 /* StartScreenView.swift in Sources */,
+				19EE635E26B7DAE70005BA7B /* ConditionalModifier+Extension.swift in Sources */,
 				1989FA7326B1397400FA9893 /* ContentView.swift in Sources */,
 				194FD4F226B41E47006315B5 /* IncopoTextView.swift in Sources */,
 				1989FAB226B19D5D00FA9893 /* AddPostCoordinator.swift in Sources */,
