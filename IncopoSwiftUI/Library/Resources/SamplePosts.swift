@@ -10,9 +10,9 @@ import UIKit
 class SamplePosts {
     
     let sampleAuthors = SampleAuthors()
+    var posts = [Post]()
     
     func getPosts() -> [Post] {
-        var posts = [Post]()
         let authors = sampleAuthors.getAuthors()
         
         let post1 = Post(id: "1",
@@ -147,5 +147,14 @@ class SamplePosts {
         posts.append(post8)
         
         return posts
+    }
+    
+    
+    func getAuthorForPost(post: Post) -> Author {
+        let authors = sampleAuthors.getAuthors()
+        
+        return authors.filter {
+            $0.authorID == post.authorID
+        }[0]
     }
 }

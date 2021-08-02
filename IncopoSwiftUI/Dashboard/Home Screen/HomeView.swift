@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
+    let samplePosts = SamplePosts()
     let authors = SampleAuthors().getAuthors()
     let posts   = SamplePosts().getPosts()
     
@@ -28,14 +29,33 @@ struct HomeView: View {
             .padding(.top, 10)
             .padding(.horizontal, 30)
             
-           
-            ScrollView(.vertical) {
-                PostView(author: authors[0], post: posts[0])
+            GeometryReader { proxy in
+                
+                TabView {
+                    ForEach(posts) { post in
+                        
+                        PostView(author: samplePosts.getAuthorForPost(post: post),
+                                 post: post)
+                    }
+                    .rotationEffect(.degrees(-90))
+                    .frame(
+                        width: proxy.size.width,
+                        height: proxy.size.height
+                    )
+                }
+                .frame(
+                    width: proxy.size.height,
+                    height: proxy.size.width
+                )
+                .rotationEffect(.degrees(90), anchor: .topLeading)
+                .offset(x: proxy.size.width)
+                .tabViewStyle(
+                    PageTabViewStyle(indexDisplayMode: .never)
+                )
             }
             
             Spacer()
         }
-        
     }
 }
 
