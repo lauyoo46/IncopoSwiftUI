@@ -12,6 +12,7 @@ struct PostView: View {
     let author: Author
     let post: Post
     @State var isSeeMorePressed: Bool = false
+    @State var isLikePressed: Bool = false
     @State private var desiredHeight: CGFloat = 0
     
     var body: some View {
@@ -69,8 +70,14 @@ struct PostView: View {
             .padding(.bottom, 20)
             
             HStack(spacing: 10) {
-                Image(systemName: "hand.thumbsup")
-                    .font(.system(size: 18))
+                Button(action: {
+                    isLikePressed.toggle()
+                }, label: {
+                    Image(systemName: isLikePressed ? "hand.thumbsup.fill" : "hand.thumbsup")
+                        .font(.system(size: 18))
+                        .foregroundColor(.black)
+                })
+                
                 
                 Text("\(post.noLikes) likes")
                     .font(.system(size: 18))

@@ -12,6 +12,7 @@ struct HomeView: View {
     let samplePosts = SamplePosts()
     let authors = SampleAuthors().getAuthors()
     let posts   = SamplePosts().getPosts()
+    @State var isFavorite = false
     
     var body: some View {
         
@@ -22,9 +23,14 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                Image(systemName: "heart")
-                    .font(.system(size: 30))
-                    .foregroundColor(.red)
+                Button(action: {
+                    isFavorite.toggle()
+                }, label: {
+                    Image(systemName: isFavorite ? "heart.fill" : "heart")
+                        .font(.system(size: 30))
+                        .foregroundColor(.red)
+                })
+                
             }
             .padding(.top, 10)
             .padding(.horizontal, 30)
