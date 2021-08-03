@@ -47,7 +47,11 @@
 		1989FAC626B1B0E600FA9893 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC526B1B0E600FA9893 /* Post.swift */; };
 		1989FAC826B1B41400FA9893 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC726B1B41400FA9893 /* Author.swift */; };
 		1989FACA26B1B43100FA9893 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC926B1B43100FA9893 /* User.swift */; };
+		19D7C40826B92200000B6F58 /* PostAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7C40726B92200000B6F58 /* PostAuthor.swift */; };
 		19EE635E26B7DAE70005BA7B /* ConditionalModifier+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */; };
+		19EE636126B822490005BA7B /* PostDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE636026B822490005BA7B /* PostDetailsCoordinator.swift */; };
+		19EE636326B822590005BA7B /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE636226B822590005BA7B /* PostDetailsViewModel.swift */; };
+		19EE636526B822630005BA7B /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE636426B822630005BA7B /* PostDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +97,11 @@
 		1989FAC526B1B0E600FA9893 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1989FAC726B1B41400FA9893 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		1989FAC926B1B43100FA9893 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		19D7C40726B92200000B6F58 /* PostAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthor.swift; sourceTree = "<group>"; };
 		19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConditionalModifier+Extension.swift"; sourceTree = "<group>"; };
+		19EE636026B822490005BA7B /* PostDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsCoordinator.swift; sourceTree = "<group>"; };
+		19EE636226B822590005BA7B /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
+		19EE636426B822630005BA7B /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +241,7 @@
 		1989FAA026B1857700FA9893 /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
+				19EE635F26B805E80005BA7B /* PostDetails Screen */,
 				1989FAC426B1B0C300FA9893 /* Models */,
 				1989FAC326B1B0BC00FA9893 /* Views */,
 				1989FAA126B18B2300FA9893 /* HomeCoordinator.swift */,
@@ -296,6 +305,7 @@
 				1989FAC726B1B41400FA9893 /* Author.swift */,
 				1989FAC926B1B43100FA9893 /* User.swift */,
 				1989FAC526B1B0E600FA9893 /* Post.swift */,
+				19D7C40726B92200000B6F58 /* PostAuthor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +316,16 @@
 				19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19EE635F26B805E80005BA7B /* PostDetails Screen */ = {
+			isa = PBXGroup;
+			children = (
+				19EE636026B822490005BA7B /* PostDetailsCoordinator.swift */,
+				19EE636226B822590005BA7B /* PostDetailsViewModel.swift */,
+				19EE636426B822630005BA7B /* PostDetailsView.swift */,
+			);
+			path = "PostDetails Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +402,7 @@
 				1989FAAD26B19CA000FA9893 /* SearchView.swift in Sources */,
 				1989FABC26B19DB200FA9893 /* FavoritesView.swift in Sources */,
 				1989FA9D26B1855E00FA9893 /* TabBarViewModel.swift in Sources */,
+				19D7C40826B92200000B6F58 /* PostAuthor.swift in Sources */,
 				19149EED26B2AAB4001DF399 /* SampleAuthors.swift in Sources */,
 				1989FA8F26B1542C00FA9893 /* Router.swift in Sources */,
 				1989FAB826B19D9E00FA9893 /* FavoritesCoordinator.swift in Sources */,
@@ -394,6 +415,8 @@
 				19149EEB26B2AAA9001DF399 /* SampleUsers.swift in Sources */,
 				1989FAAB26B19C9600FA9893 /* SearchViewModel.swift in Sources */,
 				1989FAC226B19DD600FA9893 /* ProfileView.swift in Sources */,
+				19EE636526B822630005BA7B /* PostDetailsView.swift in Sources */,
+				19EE636126B822490005BA7B /* PostDetailsCoordinator.swift in Sources */,
 				1989FAA926B19C8900FA9893 /* SearchCoordinator.swift in Sources */,
 				1989FA9F26B1856800FA9893 /* TabBarView.swift in Sources */,
 				1989FAA626B18B3E00FA9893 /* HomeView.swift in Sources */,
@@ -406,6 +429,7 @@
 				1989FA6F26B1397400FA9893 /* AppDelegate.swift in Sources */,
 				1989FAB626B19D7800FA9893 /* AddPostView.swift in Sources */,
 				1989FA8D26B1541400FA9893 /* Drawable.swift in Sources */,
+				19EE636326B822590005BA7B /* PostDetailsViewModel.swift in Sources */,
 				1989FA8726B14DF000FA9893 /* Coordinator.swift in Sources */,
 				1989FA7126B1397400FA9893 /* SceneDelegate.swift in Sources */,
 				1989FA9826B1567C00FA9893 /* StartScreenView.swift in Sources */,

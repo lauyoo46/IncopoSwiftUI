@@ -32,10 +32,18 @@ struct PostView: View {
             
             VStack(alignment: .leading) {
                 
-                Text(post.title)
-                    .font(.title2)
-                    .fontWeight(.medium)
-                    .padding(.leading, 4)
+                Button(action: {
+                    viewModel.seePostDetails(for: post, with: author)
+                }, label: {
+                    Text(post.title)
+                        .font(.title2)
+                        .fontWeight(.medium)
+                        .foregroundColor(.black)
+                        .padding(.leading, 4)
+                        .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                })
+                
                 
                 IncopoReadOnlyTextView(text: post.content, desiredHeight: $desiredHeight)
                     .conditionalModifier(!isSeeMorePressed, transform: {
@@ -44,6 +52,9 @@ struct PostView: View {
                     .conditionalModifier(isSeeMorePressed, transform: {
                         $0.frame(height: max(desiredHeight, 155))
                     })
+                    .onTapGesture {
+                        viewModel.seePostDetails(for: post, with: author)
+                    }
                 
                 Button(action: {
                     isSeeMorePressed.toggle()

@@ -29,6 +29,20 @@ class HomeCoordinator: BaseCoordinator {
 
 extension HomeCoordinator {
     private func configureActions(for viewModel: HomeViewModel) {
-        
+        viewModel
+            .seePostDetailsAction
+            .sink { postAuthor in
+                self.buildPostDetailsCoordinator(for: postAuthor.post, with: postAuthor.author)
+            }
+            .store(in: &subscriptions)
+    }
+    
+    private func buildPostDetailsCoordinator(for post: Post, with author: Author) {
+        let postDetailsCoordinator = PostDetailsCoordinator(router: router, post: post, author: author, homeViewModel: viewModel)
+        postDetailsCoordinator.start()
+        postDetailsCoordinator.isCompleted = { [weak self] in
+            self?.free(coordinator: postDetailsCoordinator)
+            self?.router.navigationController.navigationBar.isHidden = true
+        }
     }
 }
