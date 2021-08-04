@@ -36,7 +36,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label(
                         title: { Text("Favorites") },
-                        icon: { Image(systemName: "star") }
+                        icon: { Image(systemName: "heart") }
                     )
                 }
                 .tag(3)
@@ -48,5 +48,6 @@ struct TabBarView: View {
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
+            .environmentObject(TabBarViewModel())
     }
 }
