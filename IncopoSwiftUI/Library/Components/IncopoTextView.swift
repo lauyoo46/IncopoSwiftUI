@@ -35,3 +35,20 @@ struct IncopoReadOnlyTextView: UIViewRepresentable {
         }
     }
 }
+
+
+struct IncopoTextView: UIViewRepresentable {
+    @Binding var text: String
+    
+    func makeUIView(context: Context) -> UITextView {
+        let textView = UITextView()
+        
+        textView.font = UIFont(name: "Avenir-Book", size: 18)
+        
+        return textView
+    }
+    
+    func updateUIView(_ uiView: UITextView, context: Context) {
+        uiView.text = text
+    }
+}

@@ -9,4 +9,6 @@ import Foundation
 
 class AddPostViewModel: ObservableObject {
     
+    @Published var postTitle = ""
+    @Published var postContent = ""
 }

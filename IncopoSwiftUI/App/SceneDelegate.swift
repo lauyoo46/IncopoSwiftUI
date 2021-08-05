@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -36,6 +37,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             appCoordinator.start()
             window.makeKeyAndVisible()
         }
+        
+        let context = persistentContainer.viewContext
+        //let contentView = User().environment(\.managedObjectContext, context)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -61,11 +65,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+        saveContext()
     }
 
+//  MARK: - CoreData
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+      let container = NSPersistentContainer(name: "IncopoApp")
+      container.loadPersistentStores { _, error in
+        if let error = error as NSError? {
+          fatalError("Unresolved error \(error), \(error.userInfo)")
+        }
+      }
+      return container
+    }()
 
+    func saveContext() {
+      let context = persistentContainer.viewContext
+      if context.hasChanges {
+        do {
+          try context.save()
+        } catch {
+          let nserror = error as NSError
+          fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+      }
+    }
 }
 

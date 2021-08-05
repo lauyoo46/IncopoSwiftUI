@@ -27,7 +27,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label(
                         title: { Text("Add") },
-                        icon: { Image(systemName: "plus") }
+                        icon: { Image(systemName: "plus.circle") }
                     )
                 }
                 .tag(2)

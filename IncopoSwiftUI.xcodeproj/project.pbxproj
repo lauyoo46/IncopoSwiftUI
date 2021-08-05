@@ -44,11 +44,11 @@
 		1989FABE26B19DC400FA9893 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FABD26B19DC400FA9893 /* ProfileCoordinator.swift */; };
 		1989FAC026B19DCD00FA9893 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FABF26B19DCD00FA9893 /* ProfileViewModel.swift */; };
 		1989FAC226B19DD600FA9893 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC126B19DD600FA9893 /* ProfileView.swift */; };
-		1989FAC626B1B0E600FA9893 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC526B1B0E600FA9893 /* Post.swift */; };
 		1989FAC826B1B41400FA9893 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC726B1B41400FA9893 /* Author.swift */; };
 		1989FACA26B1B43100FA9893 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FAC926B1B43100FA9893 /* User.swift */; };
 		19D7C40826B92200000B6F58 /* PostAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7C40726B92200000B6F58 /* PostAuthor.swift */; };
 		19D7C40A26B93F51000B6F58 /* HamburgerMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7C40926B93F51000B6F58 /* HamburgerMenuView.swift */; };
+		19E0674E26BBCAEC00A0E11F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E0674D26BBCAEC00A0E11F /* Post.swift */; };
 		19EE635E26B7DAE70005BA7B /* ConditionalModifier+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */; };
 		19EE636126B822490005BA7B /* PostDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE636026B822490005BA7B /* PostDetailsCoordinator.swift */; };
 		19EE636326B822590005BA7B /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE636226B822590005BA7B /* PostDetailsViewModel.swift */; };
@@ -95,11 +95,11 @@
 		1989FABD26B19DC400FA9893 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		1989FABF26B19DCD00FA9893 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		1989FAC126B19DD600FA9893 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		1989FAC526B1B0E600FA9893 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1989FAC726B1B41400FA9893 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		1989FAC926B1B43100FA9893 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		19D7C40726B92200000B6F58 /* PostAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthor.swift; sourceTree = "<group>"; };
 		19D7C40926B93F51000B6F58 /* HamburgerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerMenuView.swift; sourceTree = "<group>"; };
+		19E0674D26BBCAEC00A0E11F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "IncopoSwiftUI/Dashboard/Home Screen/Models/Post.swift"; sourceTree = SOURCE_ROOT; };
 		19EE635D26B7DAE70005BA7B /* ConditionalModifier+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConditionalModifier+Extension.swift"; sourceTree = "<group>"; };
 		19EE636026B822490005BA7B /* PostDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsCoordinator.swift; sourceTree = "<group>"; };
 		19EE636226B822590005BA7B /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 			children = (
 				1989FAC726B1B41400FA9893 /* Author.swift */,
 				1989FAC926B1B43100FA9893 /* User.swift */,
-				1989FAC526B1B0E600FA9893 /* Post.swift */,
+				19E0674D26BBCAEC00A0E11F /* Post.swift */,
 				19D7C40726B92200000B6F58 /* PostAuthor.swift */,
 			);
 			path = Models;
@@ -413,7 +413,6 @@
 				19149EE926B2AA95001DF399 /* SamplePosts.swift in Sources */,
 				1989FABA26B19DAA00FA9893 /* FavoritesViewModel.swift in Sources */,
 				1989FAA226B18B2300FA9893 /* HomeCoordinator.swift in Sources */,
-				1989FAC626B1B0E600FA9893 /* Post.swift in Sources */,
 				1989FAA426B18B3300FA9893 /* HomeViewModel.swift in Sources */,
 				19149EEB26B2AAA9001DF399 /* SampleUsers.swift in Sources */,
 				1989FAAB26B19C9600FA9893 /* SearchViewModel.swift in Sources */,
@@ -424,6 +423,7 @@
 				1989FA9F26B1856800FA9893 /* TabBarView.swift in Sources */,
 				1989FAA626B18B3E00FA9893 /* HomeView.swift in Sources */,
 				1989FA9226B1551D00FA9893 /* StartScreenCoordinator.swift in Sources */,
+				19E0674E26BBCAEC00A0E11F /* Post.swift in Sources */,
 				1989FA9B26B1855500FA9893 /* TabBarCoordinator.swift in Sources */,
 				1989FA8426B14D8800FA9893 /* AppCoordinator.swift in Sources */,
 				1989FABE26B19DC400FA9893 /* ProfileCoordinator.swift in Sources */,
