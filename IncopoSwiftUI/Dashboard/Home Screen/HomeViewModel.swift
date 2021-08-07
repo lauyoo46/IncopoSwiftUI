@@ -13,9 +13,14 @@ class HomeViewModel: ObservableObject {
     @Published var commentText: String = ""
     
     lazy var seePostDetailsAction = PassthroughSubject<PostAuthor, Never>()
+    lazy var createSearchScreenAction = PassthroughSubject<Void, Never>()
     
     func seePostDetails(for post: Post, with author: Author) {
         let postAuthor = PostAuthor(post: post, author: author)
         seePostDetailsAction.send(postAuthor)
+    }
+    
+    func createSearchScreen() {
+        createSearchScreenAction.send()
     }
 }

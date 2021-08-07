@@ -69,6 +69,7 @@ struct HomeView: View {
             
             if isShowingHamburgerMenu {
                 HamburgerMenuView()
+                    .environmentObject(viewModel)
                     .frame(width: UIScreen.main.bounds.width/2, alignment: .leading)
                     .transition(.move(edge: .leading))
             }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HamburgerMenuView: View {
+    @EnvironmentObject var viewModel: HomeViewModel
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -57,16 +59,18 @@ struct HamburgerMenuView: View {
 struct HamburgerMenuView_Previews: PreviewProvider {
     static var previews: some View {
         HamburgerMenuView()
+            .environmentObject(HomeViewModel())
     }
 }
 
 struct HamburgerMenuEntry: View {
+    @EnvironmentObject var viewModel: HomeViewModel
     let imageName: String
     let text: String
     
     var body: some View {
         Button(action: {
-
+            viewModel.createSearchScreen()
         }, label: {
             HStack {
                 Image(systemName: imageName)
